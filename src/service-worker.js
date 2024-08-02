@@ -16,17 +16,17 @@ self.addEventListener("push", function(event) {
   // and have additional business logic in payload
   var title = pinpointPayload["pinpoint.notification.title"];
   var body = pinpointPayload["pinpoint.notification.body"];
+  
   var icon = "/images/icon-192x192.png";
   var notificationUrl = pinpointPayload["pinpoint.url"];
+  
   event.waitUntil(
     self.registration.showNotification(title, {
       body: body,
-      icon: icon,
-      data: {
-        notificationUrl: notificationUrl // pass the url to open as additional meta data
-      }
+      icon: icon
     })
   );
+
 });
 
 self.addEventListener("notificationclick", function(event) {
