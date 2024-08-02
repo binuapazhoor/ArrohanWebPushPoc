@@ -4,14 +4,14 @@
   "description": "A basic demonstration of a pwa that handles push notifications.",
   "author": "arrohan",
   "dependencies": {
-    "aws-amplify": "^4.0.2",
-    "firebase": "^8.6.2"
+    "aws-amplify": "^6.4.3",
+    "firebase": "^10.12.4"
   },
   "devDependencies": {
-    "copy-webpack-plugin": "^9.0.0",
-    "webpack": "^5.37.1",
-    "webpack-cli": "^4.7.0",
-    "webpack-dev-server": "^3.11.2"
+    "copy-webpack-plugin": "^12.0.2",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
   },
   "browser": {
     "crypto": false
